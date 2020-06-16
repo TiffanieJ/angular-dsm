@@ -13,7 +13,7 @@ export default {
 export const SideNav = () => ({
   component: SideNavComponent,
   props: {
-    text:
+    text: text( 'text',
       '<div class="grid-row grid-gap"><div class="tablet:grid-col-4">\n' +
       '  <h6 class="usa-heading-alt">Single level</h6><nav aria-label="Secondary navigation">\n' +
       '  <ul class="usa-sidenav">\n' +
@@ -82,6 +82,6 @@ export const SideNav = () => ({
       '  </li>\n' +
       '  </ul>\n' +
       '</nav>\n' +
-      '</div></div>\n',
+      '</div></div>\n'),
   },
 });
