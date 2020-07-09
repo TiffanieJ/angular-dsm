@@ -8,8 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "npm run docs:json && start-storybook -p 6006 ",
+    "build-storybook": "build-storybook",
+    "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
+    "storybook": " start-storybook -p 9008 -s src/assets"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +23,7 @@
     "@angular/platform-browser": "~8.2.7",
     "@angular/platform-browser-dynamic": "~8.2.7",
     "@angular/router": "~8.2.7",
+    "@storybook/addon-docs": "^6.0.0-beta.30",
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-storysource": "^5.3.19",
     "rxjs": "~6.4.0",
